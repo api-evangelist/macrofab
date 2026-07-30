@@ -1,8 +1,18 @@
 aid: macrofab
 name: MacroFab
-description: 'MacroFab is a company surfaced as a portfolio company of foundry-group and added to the
-  API Evangelist network as a stub for enrichment. Sector: hardware. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  MacroFab is a US-based electronics manufacturing services (EMS) company operating a
+  digital manufacturing platform for PCB assembly, from prototype to production. Its
+  platform is powered by FabIQ, a manufacturing AI that automates instant quoting,
+  component sourcing, and supply-chain intelligence: engineers upload design files
+  (Gerbers, ODB++, native EDA formats) and receive itemized quotes with live BOM
+  pricing against distributor inventory, component alternate suggestions, tariff impact
+  analysis, consigned inventory management, and real-time order tracking. Founded in
+  2013 and headquartered in Houston, TX, MacroFab runs ITAR-registered, ISO 9001:2015
+  certified, DPAS-rated US manufacturing lines serving industrial, defense, autonomous
+  systems, and test-and-measurement customers. The customer platform (factory.macrofab.com)
+  is authenticated via OpenID Connect / OAuth2; MacroFab does not publish an open API
+  specification.
 url: https://raw.githubusercontent.com/api-evangelist/macrofab/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +20,31 @@ x-backed-by:
 - foundry-group
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://www.macrofab.com/
 tags:
 - Company
 - Hardware
+- Electronics Manufacturing
+- PCB Assembly
+- Contract Manufacturing
+- Supply Chain
+- Manufacturing AI
+- ITAR
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,40 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/macrofab-domain-security.yml
 - type: Website
-  url: https://macrofab.com
+  url: https://www.macrofab.com/
+- type: Documentation
+  url: https://support.macrofab.com
+- type: Support
+  url: https://support.macrofab.com
+- type: Blog
+  url: https://www.macrofab.com/blog
+- type: SignUp
+  url: https://factory.macrofab.com/login
+- type: Login
+  url: https://factory.macrofab.com/login
+- type: PrivacyPolicy
+  url: https://www.macrofab.com/legal/privacy
+- type: TermsOfService
+  url: https://www.macrofab.com/legal/msa
+- type: GitHubOrganization
+  url: https://github.com/MacroFab
+- type: LLMsTxt
+  url: llms/macrofab-llms.txt
+- type: WellKnown
+  url: well-known/macrofab-well-known.yml
+- type: Authentication
+  url: authentication/macrofab-authentication.yml
+- type: OpenIDConnect
+  url: well-known/macrofab-openid-configuration.json
+- type: OAuthScopes
+  url: scopes/macrofab-scopes.yml
+- type: Conformance
+  url: conformance/macrofab-conformance.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

@@ -1,0 +1,30 @@
+generated: '2026-07-20'
+method: searched
+source: https://factory.macrofab.com/.well-known/openid-configuration
+notes: >-
+  MacroFab's customer manufacturing platform (factory.macrofab.com) publishes a
+  live OpenID Connect discovery document (OAuth2 authorization_code flow). The
+  marketing host (www.macrofab.com) is behind a WAF and returns 403 for
+  /.well-known/ paths. No public API-catalog, ai-plugin, or security.txt was found.
+hosts:
+  - host: https://factory.macrofab.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        file: macrofab-openid-configuration.json
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://www.macrofab.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403

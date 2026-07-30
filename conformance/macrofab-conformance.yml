@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://factory.macrofab.com/.well-known/openid-configuration
+notes: >-
+  Standards conformance derived from MacroFab's live OpenID Connect discovery
+  document. No open OpenAPI is published, so cross-cutting API standards (RFC 9457,
+  JSON:API, pagination) cannot be asserted. Manufacturing/quality certifications
+  (ISO 9001:2015, ITAR registration, DPAS DO/DX rating) are self-reported on the
+  company site and are recorded here as evidence, not as API/security compliance.
+standards:
+  - id: oauth2
+    conforms: true
+    evidence: >-
+      factory.macrofab.com publishes OAuth2 authorization_code endpoints
+      (/oauth/authorize, /oauth/token, /oauth/jwks.json)
+  - id: oidc
+    conforms: true
+    evidence: >-
+      live /.well-known/openid-configuration with RS256 id_token signing and
+      standard OIDC scopes (openid, email)
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: no public OpenAPI or error-envelope documentation available
+certifications:
+  - name: ISO 9001:2015
+    scope: quality-management
+    source: https://www.macrofab.com/ (self-reported)
+  - name: ITAR registered
+    scope: defense-manufacturing
+    source: https://www.macrofab.com/ (self-reported)
+  - name: DPAS DO/DX rated
+    scope: defense-priority
+    source: https://www.macrofab.com/ (self-reported)

@@ -1,0 +1,33 @@
+generated: '2026-07-20'
+method: searched
+source: https://factory.macrofab.com/.well-known/openid-configuration
+docs: https://support.macrofab.com
+notes: >-
+  Derived from MacroFab's live OpenID Connect discovery document on the customer
+  manufacturing platform (factory.macrofab.com). MacroFab does not publish an open
+  OpenAPI/Swagger definition; the platform is authenticated. The OIDC metadata below
+  is the authoritative, provider-published auth contract for the factory platform.
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [authorizationCode]
+  scopes: [openid, email]
+schemes:
+  - name: OpenIDConnect
+    type: openIdConnect
+    openIdConnectUrl: https://factory.macrofab.com/.well-known/openid-configuration
+    issuer: https://factory.macrofab.com
+    sources: [well-known/macrofab-openid-configuration.json]
+  - name: OAuth2
+    type: oauth2
+    flows:
+      - flow: authorizationCode
+        authorizationUrl: https://factory.macrofab.com/oauth/authorize
+        tokenUrl: https://factory.macrofab.com/oauth/token
+        scopes:
+          openid: OpenID Connect authentication
+          email: Access to the account email address
+    jwks_uri: https://factory.macrofab.com/oauth/jwks.json
+    token_endpoint_auth_methods_supported: [client_secret_basic, client_secret_post]
+    id_token_signing_alg_values_supported: [RS256]
+    response_types_supported: [code]
+    sources: [well-known/macrofab-openid-configuration.json]

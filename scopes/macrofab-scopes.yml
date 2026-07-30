@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://factory.macrofab.com/.well-known/openid-configuration
+notes: >-
+  Scopes are taken from the scopes_supported field of MacroFab's live OpenID Connect
+  discovery document. The factory platform advertises only the standard OIDC scopes;
+  no product-specific permission scopes are published.
+schemes:
+  - name: OAuth2
+    source: well-known/macrofab-openid-configuration.json
+    flows:
+      - flow: authorizationCode
+        authorizationUrl: https://factory.macrofab.com/oauth/authorize
+        tokenUrl: https://factory.macrofab.com/oauth/token
+scopes:
+  - scope: openid
+    description: OpenID Connect authentication (issue an ID token)
+    flows: [authorizationCode]
+    sources: [well-known/macrofab-openid-configuration.json]
+  - scope: email
+    description: Access to the authenticated account's email address
+    flows: [authorizationCode]
+    sources: [well-known/macrofab-openid-configuration.json]

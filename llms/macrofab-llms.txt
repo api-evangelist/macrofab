@@ -1,0 +1,48 @@
+# MacroFab
+
+MacroFab is a US-based electronics manufacturing services (EMS) company with a digital manufacturing platform. We help hardware engineering teams quote, order, and track PCB assemblies — from prototype to production — through an online platform powered by FabIQ, MacroFab's manufacturing AI.
+
+## What MacroFab Does
+
+MacroFab provides contract electronics manufacturing with a technology-first approach:
+- PCB assembly (PCBA) for prototypes and production runs
+- Full supply chain management and component sourcing
+- Component inventory management: consign parts to a MacroFab warehouse and allocate across builds
+- Order tracking with real-time production visibility
+- ITAR-registered manufacturing for defense and aerospace programs
+- Box build, fulfillment, and inventory management
+
+## The MacroFab Platform
+
+MacroFab's manufacturing platform is powered by FabIQ, an AI system that automates quoting, sourcing, and supply chain intelligence. Engineers upload design files (Gerbers, ODB++, native EDA formats) and receive instant, itemized quotes. The platform includes:
+- Live BOM pricing against distributor inventory
+- Component alternate suggestions with form-fit-function comparison
+- Tariff impact analysis at the component level
+- Consigned inventory management with BoM-level coverage and real-time consumption tracking
+- Order tracking from design review through shipment
+- Revision history and side-by-side order comparison
+- Volume pricing curves from prototype through production
+
+## Key Pages
+
+- Homepage: https://www.macrofab.com/
+- Platform overview: https://www.macrofab.com/platform
+- Manufacturing capabilities: https://www.macrofab.com/capabilities
+- Request a demo: https://www.macrofab.com/demo
+- Blog (electronics manufacturing content): https://www.macrofab.com/blog
+- Case studies: https://www.macrofab.com/case-studies
+- White papers and guides: https://www.macrofab.com/documents
+- Responsible AI policy: https://www.macrofab.com/responsible-ai
+- Factory partner program: https://www.macrofab.com/partners
+- Careers: https://www.macrofab.com/careers
+
+## Company Facts
+
+- Founded: 2013
+- Headquarters: Houston, TX
+- Manufacturing: US-based facilities, ITAR registered, DPAS DO/DX rated
+- Certifications: ISO 9001:2015, ITAR registered
+- NPS Score: 85
+- PCBs shipped: 5M+
+- US manufacturing lines: 100+
+- Engineering hours saved: 1M+
